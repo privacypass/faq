@@ -20,6 +20,8 @@ Privacy Pass only stores data relating the tokens that are used creating 'passes
 
 In preliminary tests on consumer hardware, our extension takes ~1.1 seconds to generate blinded tokens to be signed by the server and ~1.9 seconds to parse the signed tokens and verify the DLEQ proof. Creating a pass that can be used to redeem signed tokens takes <40ms.
 
+In terms of request sizes, Privacy Pass adds ~2kb of data to client requests for tokens to be signed and ~0.4kb for requests to redeem a pass. The server signing response includes ~17kb additional data.
+
 ### Who currently supports Privacy Pass?
 
 Privacy Pass is currently supported by Cloudflare to help reduce the number of CAPTCHAs that need to be solved by honest users. The privacy-preserving aspect of Privacy Pass means that users can redeem tokens instead of solving more CAPTCHAs without compromising their anonymity.
