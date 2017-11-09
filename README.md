@@ -12,6 +12,10 @@ Privacy Pass uses the [Stanford JavaScript Cryptography Library](https://github.
 
 In the near future, we hope to publish a paper detailing the security goals that we hope for our protocol to achieve. With these goals we also present proofs of security that assume the hardness of standard cryptographic assumptions such as the discrete log problem.
 
+### Is Privacy Pass completely finished?
+
+No, we regard Privacy Pass and the protocol we use as being beta releases currently and still under active development. There are still features that have not been completely implemented in the extension such as DLEQ proof verification. We hope to be able to introduce these features and thus a complete implementation of the extension in the near future. In the meantime, if you notice anything wrong at all then we would love for you to get in touch or contribute using the links below.
+
 ### What does Privacy Pass change about my browser experience?
 
 Privacy Pass only stores data relating the tokens that are used creating 'passes'. Privacy Pass may also make changes to outgoing requests if a situation is deemed to instantiate either the signing or redemption phase of our protocol.
