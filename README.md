@@ -10,7 +10,9 @@ Privacy Pass uses the [Stanford JavaScript Cryptography Library](https://github.
 
 ### Is the protocol provably secure?
 
-In the near future, we hope to publish a paper detailing the security goals that we hope for our protocol to achieve. With these goals we also present proofs of security that assume the hardness of standard cryptographic assumptions such as the discrete log problem.
+We have written a paper that will be presented at the [PETS 2018](https://www.petsymposium.org/2018/) symposium in Barcelona. In the paper we prove that the protocol satisfies the properties of _unlinkability_ (essentially showing that no signed tokens can be linked to future redemptions) and _one-more-token-security_ (proving that the client cannot forge valid signatures on unsigned tokens). There may be other desirable properties that we can prove about the protocol, but these two properties represent the cornerstone goals of our design and can be proven using standard discrete-log-based assumptions. We also provide more details on how the DLEQ proof mechanism is explicitly used to counter certain methods of deanonymization.
+
+For more details on these results, read the paper [here](https://www.petsymposium.org/2018/files/papers/issue3/popets-2018-0026.pdf).
 
 ### Is Privacy Pass completely finished?
 
